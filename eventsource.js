@@ -127,7 +127,7 @@ var EventSourcePolyfill = (function (global) {
     var contentTypeRegExp = /^text\/event\-stream;?(\s*charset\=utf\-8)?$/i;
 
     var MINIMUM_DURATION = 1000;
-    var MAXIMUM_DURATION = 18000000;
+    var MAXIMUM_DURATION = 5000;
 
     function getDuration (value, def) {
         var n = value;
@@ -354,6 +354,7 @@ var EventSourcePolyfill = (function (global) {
                                 }
                                 value = "";
                                 field = "";
+                                state = c === "\n" ? AFTER_CR : FIELD_START;
                                 if (state === FIELD_START) {
                                     if (dataBuffer.length !== 0) {
                                         lastEventId = lastEventIdBuffer;
@@ -375,7 +376,6 @@ var EventSourcePolyfill = (function (global) {
                                     dataBuffer.length = 0;
                                     eventTypeBuffer = "";
                                 }
-                                state = c === "\r" ? AFTER_CR : FIELD_START;
                             } else {
                                 if (state === FIELD_START) {
                                     state = FIELD;

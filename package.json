@@ -1,5 +1,5 @@
 {
-  "name": "ng-event-source",
+  "name": "@zhang13/ng-event-source",
   "version": "1.0.14",
   "main": "eventsource.js",
   "typings": "typings.d.ts",
