@@ -18,12 +18,12 @@ How to use with angular:
 
 Install:
 ```bash
-npm install ng-event-source
+npm install @zhang13/ng-event-source
 ```
 
 TypeScript
 ```typescript
-import {EventSourcePolyfill} from 'ng-event-source';
+import {EventSourcePolyfill} from '@zhang13/ng-event-source';
 
 let eventSource = new EventSourcePolyfill('http://my/url', {headers: { headerName: 'HeaderValue', header2: 'HeaderValue2' }});
 eventSource.onmessage = (data => {

@@ -1,11 +1,14 @@
 {
   "name": "@zhang13/ng-event-source",
-  "version": "1.0.14",
+  "version": "1.0.0",
   "main": "eventsource.js",
   "typings": "typings.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sguiheux/EventSource.git"
+    "url": "git+https://github.com/zhang13/EventSource.git"
   },
   "keywords": [
     "sse",
@@ -19,10 +22,10 @@
     "angular 4",
     "webpack"
   ],
-  "author": "Steven Guiheux (https://github.com/sguiheux)",
-  "license": "MIT",
+  "author": "zhang13",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sguiheux/EventSource/issues"
+    "url": "https://github.com/zhang13/EventSource/issues"
   },
-  "homepage": "https://github.com/sguiheux/EventSource"
+  "homepage": "https://github.com/zhang13/EventSource#readme"
 }
