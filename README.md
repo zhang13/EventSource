@@ -10,7 +10,7 @@ Forked from: https://github.com/AlexGalays/EventSource
 
 修改内容
 -------------------------
-- MAXIMUM_DURATION 改为 5000
+- MAXIMUM_DURATION 改为 600000
 - 解决响应延迟问题
 
 How to use with angular:
