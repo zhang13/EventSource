@@ -127,7 +127,7 @@ var EventSourcePolyfill = (function (global) {
     var contentTypeRegExp = /^text\/event\-stream;?(\s*charset\=utf\-8)?$/i;
 
     var MINIMUM_DURATION = 1000;
-    var MAXIMUM_DURATION = 5000;
+    var MAXIMUM_DURATION = 600000;
 
     function getDuration (value, def) {
         var n = value;
